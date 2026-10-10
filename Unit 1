@@ -1,0 +1,55 @@
+1)
+#include <stdio.h>
+
+int main()
+{
+    float radius, area;
+    const float PI = 3.14;
+
+    printf("Enter the radius of the circle: ");
+    scanf("%f", &radius);
+
+    area = PI * radius * radius;
+
+    printf("Area of the circle = %.2f\n", area);
+
+    return 0;
+}
+
+2)
+#include <stdio.h>
+
+int main()
+{
+    float a, b, c, average;
+
+    printf("Enter three numbers: ");
+    scanf("%f %f %f", &a, &b, &c);
+
+    average = (a + b + c) / 3;
+
+    printf("Average = %.2f\n", average);
+
+    return 0;
+}
+
+3)
+#include <stdio.h>
+
+int main()
+{
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+    temp = a;
+    a = b;
+    b = temp;
+
+    printf("After swapping:\n");
+    printf("a = %d\n", a);
+    printf("b = %d\n", b);
+
+    return 0;
+}
